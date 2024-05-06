@@ -33,6 +33,7 @@
     <!-- Header -->
     <AppHeader />
     <!-- Main -->
+    <!-- Passo l'array al Main -->
     <AppMain :charArray="charactersArray" /> 
   </div>
 

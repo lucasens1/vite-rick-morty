@@ -1,2 +1,7 @@
 /*Importo BootStrap*/
 @import "bootstrap/scss/bootstrap";
+
+body{
+    background-image: linear-gradient(to bottom, transparent 50%, #fdd49eb8 50%), linear-gradient(to right, #f5b35db8 50%, #fdd49eb8 50%);
+    background-size: 30px 30px, 30px 30px !important;
+}

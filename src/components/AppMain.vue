@@ -13,9 +13,10 @@ export default {
 
 <template>
     <div class="container">
-        <div class="row row-cols-4">
+        <div class="row row-cols-lg-4 row-cols-md-2 g-5">
             <!-- Itero in colonne -->
-            <div class="col" v-for="char in charArray">
+            <div class="col pb-4" v-for="char in charArray">
+                <!-- Passo l'oggetto perché all'interno andrò a scrivere proprietà prese dalle chiavi -->
                 <AppCard :charObject="char" />
             </div>
         </div>
@@ -23,4 +24,7 @@ export default {
 </template>
 
 <style>
+.col{
+    height: 100%;
+}
 </style>
