@@ -26,21 +26,22 @@ export default {
 </script>
 
 <template>
-    <div class="card border-0 p-4 rounded-4 h-100">
+    <div class="my_card border-0 p-4 rounded-4 h-100">
         <!-- Immagine -->
         <img :src="charImage" class="rounded-circle mb-3" />
         <!-- Nome -->
         <p class="fs-4 text-center"> {{ charName }} </p>
         <!-- Alive or Dead -->
-        <span class="fs-5 text-center"> {{ charStatus }} </span>
+        <p class="fs-5 text-center"> {{ charStatus }} </p>
         <!-- Human or ... -->
         <p class="fs-5 text-center"> {{ charSpecies }} </p>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.card{
+.my_card{
     box-shadow: 0px 10px 25px -6px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: white;
     img{
         max-width : 100%;
     }
