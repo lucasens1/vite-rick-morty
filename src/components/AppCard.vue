@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-    <div class="card border-0 p-4 rounded-4">
+    <div class="card border-0 p-4 rounded-4 h-100">
         <!-- Immagine -->
         <img :src="charImage" class="rounded-circle mb-3" />
         <!-- Nome -->

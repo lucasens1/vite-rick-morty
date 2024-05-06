@@ -24,7 +24,4 @@ export default {
 </template>
 
 <style>
-.col{
-    height: 100%;
-}
 </style>
