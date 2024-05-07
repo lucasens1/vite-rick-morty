@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-    <div class="my_card border-0 p-4 rounded-4 h-100">
+    <div class="my_card border-0 p-4 rounded-4 h-100 d-flex flex-column justify-content-between ">
         <!-- Immagine -->
         <img :src="charImage" class="rounded-circle mb-3" />
         <!-- Nome -->

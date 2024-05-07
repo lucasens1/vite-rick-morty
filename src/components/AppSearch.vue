@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <div class="text-center p-2 mb-2"> 
+    <div class="p-2"> 
         <!-- Lo status selezionato viene passato allo store tramite v-model -->
         <select 
             @change="$emit('statusFilter')"

@@ -3,18 +3,19 @@
   import AppHeader from './components/AppHeader.vue';
   import AppMain from './components/AppMain.vue';
   import AppSearch from './components/AppSearch.vue';
+  import AppCounter from './components/AppCounter.vue';
   import { store } from "./store";
 
   export default {
     components: {
       AppHeader,
       AppSearch,
-      AppMain
+      AppMain,
+      AppCounter
     },
     data(){
       return {
-        //Creo un Array che ospiterà le informazioni sui pg di Rick&Morty
-        charactersArray : [],
+        //Uso store, per l'array
         store,
       };
     },
@@ -49,8 +50,12 @@
   <div class="container-fluid">
     <!-- Header -->
     <AppHeader />
-    <!-- SearchBar @statusFilter permette la scrematura per Status -->
-    <AppSearch @statusFilter="getStatus"/>
+    <div class="d-flex flex-row mb-2 justify-content-around">
+      <!-- Counter -->
+      <AppCounter />
+      <!-- SearchBar @statusFilter permette la scrematura per Status -->
+      <AppSearch @statusFilter="getStatus"/>
+    </div>
     <!-- Main -->
     <!-- Passo l'array dallo Store al Main -->
     <AppMain :charArray="store.characterList" /> 
