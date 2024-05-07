@@ -36,10 +36,12 @@
         //Creo un oggetto con status null che prende il valore del selected status quando è diverso da All
         const paramsObject = {
           status : null,
+          species : null,
         }
         //Se ho selectedStatus diverso da All (situazione iniziale) assegno lo status alla variabile dentro l'oggetto creato
-        if(this.store.selectedStatus !== 'All'){
+        if(this.store.selectedStatus !== 'All' && this.store.selectedForm !== 'All'){
           paramsObject.status = this.store.selectedStatus;
+          paramsObject.species = this.store.selectedForm;
         }
         //Chiamata API
         axios.get('https://rickandmortyapi.com/api/character',
