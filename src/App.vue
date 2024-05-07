@@ -1,12 +1,16 @@
 <script>
+  //Axios
   import axios from "axios";
+  //Components
   import AppHeader from './components/AppHeader.vue';
   import AppMain from './components/AppMain.vue';
   import AppSearch from './components/AppSearch.vue';
   import AppCounter from './components/AppCounter.vue';
+  //Store
   import { store } from "./store";
 
   export default {
+    //Includo i componenti importati
     components: {
       AppHeader,
       AppSearch,
@@ -20,10 +24,14 @@
       };
     },
     created(){
+      //Uso la funzione per inizializzare la pagina
       this.getStatus();
     },
     methods : {
-      getStatus(){
+      /*
+      * Description : funzione che cambia il contenuto della pagina dinamicamente filtrandolo per lo status selezionato dall'utente
+      */     
+       getStatus(){
         console.log("Get Status richiamato correttamente");
         //Creo un oggetto con status null che prende il valore del selected status quando è diverso da All
         const paramsObject = {
