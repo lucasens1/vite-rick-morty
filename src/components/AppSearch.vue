@@ -5,7 +5,7 @@ export default {
     return {
       store,
       archestatus: ["All", "Alive", "Dead", "Unknown"],
-      lifeForms : ["All", "Human", "Alien","Humanoid", "Poopybutthole"]
+      lifeForms : ["All", "Human", "Alien","Humanoid"]
     };
   },
 };
